@@ -1,0 +1,68 @@
+body{
+    color: #242635;
+}
+
+.main-container{
+    max-width: 864px;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: -0.25px;
+    line-height: 36px;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+}
+
+.nav-list > li > a{
+    text-decoration: none;
+    color: #242635;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 90px;
+    letter-spacing: -2px;
+    line-height: 102px;
+}
+
+.main-text-container{
+    max-width: 570px;
+    width: 100%;
+}
+
+.main-text{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+}
