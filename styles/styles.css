@@ -41,7 +41,32 @@ header{
 .nav-list > li > a{
     text-decoration: none;
     color: #242635;
-    padding-left: 3vw;
+    margin-left: 3vw;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+
+}
+
+.nav-list > li > a:hover{
+    color: aliceblue;
+    background-color: #242635;
+    transition: all 0.5s;
+    
+}
+
+.nav-list > .icon {
+    display: none;
+    padding: 3px 8px 1px 8px;    
+    border-radius: 50%;
+  }
+
+.nav-list > .icon:hover{
+    background-color: #242635;
+    padding: 3px 8px 1px 8px;
+    color: aliceblue;
+    transition: all 0.5s;
+    cursor: pointer;
+
 }
 
 .main-section{
@@ -130,5 +155,14 @@ header{
 
     .nav-list{
         flex-direction: column;        
+    }
+
+    .nav-list > li {
+        display: none;
+    }
+
+    .nav-list > .icon {
+      float: right;
+      display: block;
     }
 }
