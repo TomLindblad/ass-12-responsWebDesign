@@ -1,5 +1,7 @@
 body{
     color: #242635;
+    display: flex;
+    justify-content: center;
 }
 
 .main-container{
@@ -11,6 +13,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 3vh;
+    padding: 0 1vw 0 1vw;
 }
 
 .logo{
@@ -20,11 +24,12 @@ header{
     font-size: 24px;
     letter-spacing: -0.25px;
     line-height: 36px;
+
 }
 
 .nav-list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -36,6 +41,7 @@ header{
 .nav-list > li > a{
     text-decoration: none;
     color: #242635;
+    padding-left: 3vw;
 }
 
 .main-section{
@@ -44,7 +50,7 @@ header{
     align-items: center;
 }
 
-.main-header{
+.main-h1{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -65,4 +71,64 @@ header{
     font-size: 22px;
     line-height: 33px;
     text-align: center;
+    margin-bottom: 6vh;
+}
+
+.img-placeholder{
+    background-image: url(../images/horses_big.png);
+    min-width: 864px;
+    min-height:328px;
+}
+
+@media screen and (max-width: 864px) {
+    .main-h1{
+        font-size: 72px;
+        letter-spacing: -2px;
+        line-height: 83px;
+    }
+
+    .img-placeholder{
+        
+        background-image: url(../images/horses_medium.png);
+        min-width: 617px;
+        min-height: 512px;
+    }
+
+    header{
+        padding: 0 10vw 0 10vw;
+    }
+
+    .logo{
+        font-family: "Baloo Bhai 2", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+    }
+}
+
+@media screen and (max-width: 617px) {
+    .main-h1{
+        font-size: 36px;
+        letter-spacing: -1px;
+        line-height: 40px;
+    }
+
+    .img-placeholder{
+        background-image:url(../images/horses_small.jpg) ;
+        min-width: 256px;
+        min-height: 284px;
+    }
+
+    .main-text{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .main-text-container{
+        max-width: 220px;
+    }
+
+    .nav-list{
+        flex-direction: column;        
+    }
 }
